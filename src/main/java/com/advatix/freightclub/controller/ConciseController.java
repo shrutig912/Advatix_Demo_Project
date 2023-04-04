@@ -23,7 +23,7 @@ public class ConciseController {
 
 	@Autowired
 	ConciseService conciseService;
-
+/*
 	@ApiOperation(value = "Create Concise Shipment", response = ConciseResponseDto.class, httpMethod = "POST", notes = "Create CONCISE Shipment")
 	@ApiResponses(value = { @ApiResponse(code = 200, message = "", response = ConciseResponseDto.class) })
 	@PostMapping(value = "/shipmentForwardDataPopulate")
@@ -31,15 +31,6 @@ public class ConciseController {
 		log.info("Inside Concise Shipment Controller !!!!!!!!!!!");
 		return conciseService.getShipmentDataPopulationRequest(request);
 
-	}
-	
-    @ApiOperation(value = "Fetch Concise Shipment Records", response = ConciseResponseDto.class, httpMethod = "GET", notes = "Fetch Shipment Records")
-    @ApiResponses(value = {@ApiResponse(code = 200, message = "", response = ConciseResponseDto.class)})
-    @GetMapping(value = "/getTrackDetails/{strcnno}")
-    public ConciseResponseDto getShipmentTracking(@PathVariable("carrierTrackingId") String carrierTrackingId) throws CustomException {
-        log.info("Inside getTrackDetails Controller!!!!!!!!!!!!!!!!");
-        return conciseService.getShipmentTracking(carrierTrackingId);
+	}*/
 
-    }
-	
 }
